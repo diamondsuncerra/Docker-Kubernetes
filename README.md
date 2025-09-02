@@ -24,7 +24,10 @@ Deployment is done as such:
 ```bash
 kubectl create ns demo 2>$null
 kubectl -n demo apply -f k8s/
+```
+
 Watching the pod is done as such:
+```bash
 kubectl -n demo get pods -l app=flask-hello -w
 ```
 ## 6.	Accessing the app
